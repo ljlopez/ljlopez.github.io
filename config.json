@@ -250,7 +250,9 @@
         "ymax": 7377211.991781531,
         "spatialReference": {
           "wkid": 102100
-        }
+        },
+      "logo": false,
+      "showAttribution": false
       }
     },
     "id": "map",
