@@ -1,0 +1,165 @@
+.jimu-widget-polygoneditor .toolbar-section {
+  margin: 0px;
+  padding: 0px;
+  display: table;
+  width: 100%;
+  text-align: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.jimu-widget-polygoneditor .toolbar-section-title {
+  margin: 0px;
+  padding-right: 25px;
+  min-width: 105px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  width:1px;
+  white-space: nowrap;
+  color: blue;
+}
+.jimu-widget-polygoneditor button {
+  margin: 6px 8px;
+  padding:0px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px #888888;
+}
+.jimu-widget-polygoneditor button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.jimu-widget-polygoneditor button:hover img {
+  -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+  filter: grayscale(0%);
+}
+.jimu-widget-polygoneditor button:disabled  {
+  pointer-events: none;
+  opacity: 0.3;
+  filter: alpha(opacity=30); /* For IE8 and earlier */
+}
+.jimu-widget-polygoneditor button img {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+.jimu-widget-polygoneditor .tool.active-tool {
+  background-color: rgba(0, 127, 255, 0.6);
+}
+.jimu-widget-polygoneditor .tool.active-tool img {
+  -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+  filter: grayscale(0%);
+}
+.jimu-widget-polygoneditor button:active {
+  background-color: rgba(0, 127, 255, 0.6);
+	transform: translate(0px,1px);
+  -webkit-transform: translate(0px,1px);
+}
+.jimu-widget-polygoneditor hr {
+  margin: 15px 0px;
+}
+
+
+/* Status bar */
+
+.jimu-widget-polygoneditor .statusbar {
+  margin: 0px;
+  padding: 0px;
+  display: table;
+  width: 100%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.jimu-widget-polygoneditor .statusbar-left {
+  display: table-cell;
+  text-align: left;
+  margin-left: 0em;
+  vertical-align: top;
+}
+.jimu-widget-polygoneditor .statusbar-right {
+  display: table-cell;
+  text-align: right;
+  margin-right: 0em;
+  vertical-align: top;
+}
+
+
+/* ConfirmDialog */
+
+.claro .dijitDialogTitleBar {
+ 	background-color: #586679;
+  border-color: #F5F5F5;
+ }
+.claro .dijitDialogTitle {
+  color: #f8f8ff;
+  font-weight: normal;
+ }
+.claro .dijitButton .dijitButtonNode {
+   background-color: rgba(0, 0, 0, 0.2);
+ }
+.claro .dijitButton .dijitButtonNode:hover {
+   background-color: rgba(0, 0, 0, 0.4);
+ }
+ 
+ 
+/* Toaster */
+
+.dijitToasterContent {
+	padding:1em;
+	padding-top:0.25em;
+  background: rgb(34,139,34); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(34,139,34, 1), rgba(34,139,34, 0.75)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(34,139,34, 1), rgba(34,139,34, 0.75)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(34,139,34, 1), rgba(34,139,34, 0.75)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(34,139,34, 1), rgba(34,139,34, 0.75)); /* Standard syntax */
+}
+.dijitToasterMessage,
+.dijitToasterWarning,
+.dijitToasterError,
+.dijitToasterFatal{
+	font-weight:bold;
+	color:#F8F8FF;
+  text-shadow: 0 0 1px #000000;
+}
+.dijitToasterWarning .dijitToasterContent{
+  background: rgb(255,165,0); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(255,165,0, 1), rgba(255,165,0, 0.75)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(255,165,0, 1), rgba(255,165,0, 0.75)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(255,165,0, 1), rgba(255,165,0, 0.75)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(255,165,0, 1), rgba(255,165,0, 0.75)); /* Standard syntax */
+} 
+.dijitToasterError .dijitToasterContent{
+  background: rgb(255, 0, 0); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.75)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.75)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.75)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.75)); /* Standard syntax */
+}
+.dijitToasterFatal .dijitToasterContent{
+  background: rgb(128,0,128); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(128,0,128, 1), rgba(128,0,128, 0.75)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(128,0,128, 1), rgba(128,0,128, 0.75)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(128,0,128, 1), rgba(128,0,128, 0.75)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(128,0,128, 1), rgba(128,0,128, 0.75)); /* Standard syntax */
+}
+ 
+.dijitToasterClip {
+	position: absolute;
+	z-index: 5000;
+	overflow: hidden;
+  border-radius: 6px;
+}
+.dijitToasterContainer {
+	display: block;
+	position: absolute;
+	width: 17.5em;
+	margin: 0px;
+	font:0.75em;
+}

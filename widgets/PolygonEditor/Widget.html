@@ -1,0 +1,92 @@
+<div>
+
+  <div class="toolbar-section">
+    <h2 class="toolbar-section-title">${nls.undoRedoToolbar}</h2>
+    <button id="UNDO" type="button" class="command" title="Undo" data-dojo-attach-event="onclick: _uuu" disabled>
+      <img src="widgets/PolygonEditor/images/undo.png">
+    </button>
+    <button id="REDO" type="button" class="command" title="Redo" data-dojo-attach-event="onclick: _rrr" disabled>
+      <img src="widgets/PolygonEditor/images/redo.png">
+    </button>
+  </div>
+  
+  <hr>
+
+  <div class="toolbar-section">
+    <h2 class="toolbar-section-title">${nls.selectionToolbar}</h2>
+    <button id="SELECTION_NEW" type="button" class="tool" title="Create new selection" value="RECTANGLE" data-dojo-attach-event="onclick: _sat">
+      <img src="widgets/PolygonEditor/images/select_features.png">
+    </button>
+    <button id="SELECTION_ADD" type="button" class="tool" title="Add to selection" value="POINT" data-dojo-attach-event="onclick: _sat">
+      <img src="widgets/PolygonEditor/images/add_to_selection.png">
+    </button>
+    <button id="SELECTION_SUBTRACT" type="button" class="tool" title="Remove from selection" value="POINT" data-dojo-attach-event="onclick: _sat" disabled>
+      <img src="widgets/PolygonEditor/images/remove_from_selection.png">
+    </button>
+    <button id="SELECTION_CLEAR" type="button" class="command" title="Clear selection" data-dojo-attach-event="onclick: _cs" disabled>
+      <img src="widgets/PolygonEditor/images/clear_selection.png">
+    </button>
+    <button id="SELECTION_ZOOM" type="button" class="command" title="Zoom to selection" data-dojo-attach-event="onclick: _zts" disabled>
+      <img src="widgets/PolygonEditor/images/zoom_to_selection.png">
+    </button>
+  </div>
+  
+  <hr>
+
+  <div class="toolbar-section">
+    <h2 class="toolbar-section-title">${nls.editToolbar}</h2>
+    <button id="EDIT_CREATE" type="button" class="tool" title="Create new feature" value="POLYGON" data-dojo-attach-event="onclick: _sat">
+      <img src="widgets/PolygonEditor/images/create_feature.png">
+    </button>
+    <button id="EDIT_REMOVE" type="button" class="command" title="Remove feature(s)" data-dojo-attach-event="onclick: _rmf" disabled>
+      <img src="widgets/PolygonEditor/images/remove_feature.png">
+    </button>
+    <button id="EDIT_ADD" type="button" class="tool" title="Add" value="POLYGON" data-dojo-attach-event="onclick: _sat" disabled>
+      <img src="widgets/PolygonEditor/images/add.png">
+    </button>
+    <button id="EDIT_SUBTRACT" type="button" class="tool" title="Subtract" value="POLYGON" data-dojo-attach-event="onclick: _sat" disabled>
+      <img src="widgets/PolygonEditor/images/subtract.png">
+    </button>
+    <br>
+    <button id="EDIT_RESHAPE" type="button" class="tool" title="Reshape" data-dojo-attach-event="onclick: _aet" disabled>
+      <img src="widgets/PolygonEditor/images/reshape.png">
+    </button>
+    <button id="EDIT_RESHAPE_SAVE" type="button" class="command" title="Save reshape" data-dojo-attach-event="onclick: _srh" disabled>
+      <img src="widgets/PolygonEditor/images/save_reshape.png">
+    </button>
+    <button id="EDIT_UNION" type="button" class="command" title="Merge" data-dojo-attach-event="onclick: _mgf" disabled>
+      <img src="widgets/PolygonEditor/images/union.png">
+    </button>
+    <button id="EDIT_CUT" type="button" class="tool" title="Split" value="POLYLINE" data-dojo-attach-event="onclick: _sat" disabled>
+      <img src="widgets/PolygonEditor/images/cut.png">
+    </button>
+  </div>
+
+  <hr>
+  
+  <div class="toolbar-section">
+    <h2 class="toolbar-section-title">${nls.copyPasteToolbar}</h2>
+    <button id="PASTE_COPY" type="button" class="tool" title="Copy" data-dojo-attach-event="onclick: _aet" disabled>
+      <img src="widgets/PolygonEditor/images/copy_selection.png">
+    </button>
+    <button id="PASTE_NEW" type="button" class="command" title="Paste as new feature" data-dojo-attach-event="onclick: _pan" disabled>
+      <img src="widgets/PolygonEditor/images/paste_as_new.png">
+    </button>
+    <button id="PASTE_ADD" type="button" class="command" title="Paste as add" data-dojo-attach-event="onclick: _paa" disabled>
+      <img src="widgets/PolygonEditor/images/paste_as_add.png">
+    </button>
+    <button id="PASTE_SUBTRACT" type="button" class="command" title="Paste as subtract" data-dojo-attach-event="onclick: _pas" disabled>
+      <img src="widgets/PolygonEditor/images/paste_as_subtract.png">
+    </button>
+  </div>
+  
+  <hr>
+  
+  <div class="statusbar">
+    <div id="statusbar_selection" class="statusbar-left">Selected features: </div>
+    <div id="statusbar_tool" class="statusbar-right">Active tool: </div>
+  </div>
+
+  <div data-dojo-type="dojox/widget/Toaster" data-dojo-props="positionDirection:'br-left', duration:4000" data-dojo-attach-point="t"></div>
+
+</div>
